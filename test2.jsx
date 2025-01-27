@@ -48,7 +48,7 @@ const TableRow = ({
         {/* Update user button */}
         <button
           id="updateUserButton"
-          onClick={()=>openUpdateForm(_id)}
+          onClick={openUpdateForm}
           className="p-2 rounded-lg shadow-lg bg-white cursor-pointer"
         >
           <HiOutlinePencilAlt></HiOutlinePencilAlt>
