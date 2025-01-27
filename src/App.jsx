@@ -15,7 +15,7 @@ function App() {
   const [selectedUserId, setSelectedUserId] = useState(null); // For updating a specific user
   // Fetch data from the database. This function is taken because when a new user is added to the database, the new data should be fetched again.
   const fetchData = () => {
-    fetch("http://localhost:5000/users")
+    fetch("https://simple-user-management-system-server-three.vercel.app/users")
       .then((res) => res.json())
       .then((data) => setData(data))
       .catch((err) => console.error("Error fetching data:", err));
@@ -45,7 +45,7 @@ function App() {
 
     if (actionType === "create") {
       // POST API for creating a user
-      fetch("http://localhost:5000/users", {
+      fetch("https://simple-user-management-system-server-three.vercel.app/users/", {
         method: "POST",
         headers: {
           "content-type": "application/json",
@@ -81,7 +81,7 @@ function App() {
     
     else if (actionType === "update" && selectedUserId) {
       // PUT API for updating a user
-      fetch(`http://localhost:5000/users/${selectedUserId}`, {
+      fetch(`https://simple-user-management-system-server-three.vercel.app/users/${selectedUserId}`, {
         method: "PUT",
         headers: {
           "content-type": "application/json",

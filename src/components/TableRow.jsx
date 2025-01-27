@@ -21,7 +21,7 @@ const TableRow = ({
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/users/${_id}`, {
+        fetch(`https://simple-user-management-system-server-three.vercel.app/users/${_id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())
