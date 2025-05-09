@@ -1,2 +1,3 @@
+# Simple User Management System
 ## Live link
-Hosted in vercel [Simple user management system](https://simple-user-management-system-client.vercel.app)
+`Hosted with vercel`: [Simple user management system](https://simple-user-management-system-client.vercel.app)
